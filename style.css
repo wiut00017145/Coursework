@@ -99,6 +99,76 @@ nav img {
   display: none;
 }
 
+.main {
+  width: 80%;
+  margin: auto;
+  align-items: center;
+}
+
+.slider-wrapper .img-list {
+  display: grid;
+  overflow-x: auto;
+  padding-top: 75px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 50px;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.slider-wrapper .img-list::-webkit-scrollbar {
+  display: none;
+}
+
+.container .slider-scroll {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-scroll .scrollbar-track {
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  position: relative;
+  border-radius: 4px;
+}
+
+.slider-scroll:hover .scrollbar-track {
+  height: 4px;
+}
+
+.slider-scroll .scrollbar-thumb {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: #000;
+  border-radius: inherit;
+  cursor: grab;
+}
+
+.slider-scroll:hover .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.slider-scroll .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+.slider-wrapper .img-list .img-item {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+}
+
 @media (max-width: 700px) {
   .title h1 {
     font-size: 40px;
@@ -115,6 +185,7 @@ nav img {
     right: -200px;
     text-align: left;
     z-index: 2;
+    transition: 1s;
   }
   .mobile-icon {
     width: 15px;
