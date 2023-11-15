@@ -200,7 +200,30 @@ nav img {
   object-fit: cover;
 }
 
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
 @media (max-width: 700px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
+
+  .slider-wrapper .img-list {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .slider-wrapper .img-list . .img-item {
+    width: 280px;
+    height: 380px;
+  }
+  .slider-scroll .scrollbar-thumb {
+    width: 20%;
+  }
   .title h1 {
     font-size: 40px;
   }

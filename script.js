@@ -10,7 +10,11 @@ const initSlider = () => {
   const imgList = document.querySelector(".slider-wrapper .img-list");
   const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
   const sliderScroll = document.querySelector(".container .slider-scroll");
+  const sliderScrollThumb = document.querySelector(".scrollbar-thumb");
   const maxScrollLeft = imgList.scrollWidth - imgList.clientWidth;
+
+
+
   slideButtons.forEach(button => {
     button.addEventListener("click", () => {
       const direction = button.id === "prev-img" ? -1 : 1;
@@ -26,7 +30,8 @@ const initSlider = () => {
 
   const updateScroll = () => {
     const ScrollPosition = imgList.scrollLeft;
-    const Thumb = (ScrollPosition / maxScrollLeft) * ()
+    const Thumb = (ScrollPosition / maxScrollLeft) * (sliderScroll.clientWidth - sliderScrollThumb.offsetWidth);
+    sliderScrollThumb.style.left = `${Thumb}px`;
   }
 
   imgList.addEventListener("scroll", () => {
