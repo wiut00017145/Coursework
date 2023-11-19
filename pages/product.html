@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product 1 Details</title>
+    <link rel="stylesheet" href="/styles/product.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="#" class="logo"><img src="/assets/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <img
+            src="/assets/close.png"
+            alt=""
+            class="mobile-icon"
+            onclick="hideMenuBar()"
+          />
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="#">Products</a></li>
+          </ul>
+        </div>
+        <img
+          src="/assets/main-menu.png"
+          alt=""
+          class="mobile-icon"
+          onclick="showMenuBar()"
+        />
+      </nav>
+    </header>
+
+    <main>
+      <div class="product">
+        <div class="product-img"><img src="/assets/image_1.png" alt="" /></div>
+        <div class="product-details">
+          <h1 class="title">Cardinar Skyline - Красный</h1>
+          <p class="delivery">Доставка за 1 день / Бесплатно</p>
+          <div class="block-line"></div>
+          <p class="choose-car-model">Выберите модель машины:</p>
+          <div class="car-models">
+            <div class="car-model" onclick="changeBackgroundColor(this)">lacetti 1</div
+            ><div class="car-model" onclick="changeBackgroundColor(this)">lacetti 3</div
+            ><div class="car-model" onclick="changeBackgroundColor(this)">Cobalt</div
+            ><div class="car-model" onclick="changeBackgroundColor(this)">nexia 3</div
+            ><div class="car-model" onclick="changeBackgroundColor(this)">spark</div
+            ><div class="car-model" onclick="changeBackgroundColor(this)">onix</div>
+          </div>
+          <div class="count">
+            <div class="minus">-</div>
+            <div class="number">1</div>
+            <div class="plus">+</div>
+          </div>
+          <p class="cost">Цена:</p>
+          <h2 class="price">1 350 000 Сум</h2>
+          <div class="buttons">
+            <button class="add-to-basket">Добавить в корзину</button>
+            <button class="buy-button">Купить в один клик</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-about">
+        <p>Бренд Cardinar - предлагает уникально выглядящие чехлы Skyline</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Информация</h4>
+            <ul>
+              <li><a href="/index.html">home</a></li>
+              <li><a href="">about</a></li>
+              <li><a href="">contacts</a></li>
+              <li><a href="#">products</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Номер телефона</h4>
+            <ul>
+              <li><a href="">+998 (77) 253 07 07</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Почта</h4>
+            <ul>
+              <li><a href="">cardinarinfo@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Адрес</h4>
+            <ul>
+              <li><a href="">р-он Миробадский, ул. Ойбек 24, дом 5</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/product.js"></script>
+  </body>
+</html>
