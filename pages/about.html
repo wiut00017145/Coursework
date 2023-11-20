@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="/styles/about.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="#" class="logo"><img src="/assets/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <img
+            src="/assets/close.png"
+            alt=""
+            class="mobile-icon"
+            onclick="hideMenuBar()"
+          />
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/pages/contacts.html">Contacts</a></li>
+            <li><a href="/pages/shop.html">Products</a></li>
+          </ul>
+        </div>
+        <img
+          src="/assets/main-menu.png"
+          alt=""
+          class="mobile-icon"
+          onclick="showMenuBar()"
+        />
+      </nav>
+    </header>
+    <main class="container">
+      <p>Наши официальные магазины</p>
+      <div class="table-container" id="table-container"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Информация</h4>
+            <ul>
+              <li><a href="/index.html">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="/pages/contacts.html">Contacts</a></li>
+              <li><a href="/pages/shop.html">products</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Номер телефона</h4>
+            <ul>
+              <li><a href="">+998 (77) 253 07 07</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Почта</h4>
+            <ul>
+              <li><a href="">cardinarinfo@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Адрес</h4>
+            <ul>
+              <li><a href="">р-он Миробадский, ул. Ойбек 24, дом 5</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/about.js"></script>
+  </body>
+</html>
