@@ -216,8 +216,14 @@ ul {
 
 @media (max-width: 768px) {
   .header {
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
+    max-width: 450px;
+    width: 450px;
+  }
+  nav img {
+    display: none;
   }
   .footer-col {
     width: 50%;
@@ -244,9 +250,18 @@ ul {
   .buy-button {
     width: 330px;
   }
+  main {
+    width: 450px;
+  }
+  .footer {
+    width: 450px;
+  }
 }
 
 @media (max-width: 480px) {
+  .header {
+    width: 480;
+  }
   .product-card {
     width: 380px;
     height: 450px;

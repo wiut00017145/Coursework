@@ -135,76 +135,87 @@ main {
 }
 
 h1 {
-    color: #fff;
-    font-size: 3rem;
+  color: #fff;
+  font-size: 3rem;
 }
 
 label {
-    color: #fff;
-    margin-top: 20px;
-    margin-bottom: 7px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 7px;
 }
 
 input {
-    margin-bottom: 15px;
-    padding: 10px;
-    font-size: 16px;
-    border: 4px solid #fff;
-    border-radius: 4px;
-    max-width: 350px;
-    max-height: 15px;
-    width: 100%;
-    height: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 4px solid #fff;
+  border-radius: 4px;
+  max-width: 350px;
+  max-height: 15px;
+  width: 100%;
+  height: 100%;
 }
 
 textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    font-size: 16px;
-    border: 4px solid #fff;
-    border-radius: 4px;
-    max-width: 350px;
-    max-height: 50px;
-    width: 100%;
-    height: 100%;
-    resize: none;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 4px solid #fff;
+  border-radius: 4px;
+  max-width: 350px;
+  max-height: 50px;
+  width: 100%;
+  height: 100%;
+  resize: none;
 }
 
 button {
-    margin-left: 120px;
-    padding: 10px;
-    font-size: 16px;
-    border: 4px solid #fff;
-    border-radius: 4px;
-    max-width: 150px;
-    max-height: 50px;
-    width: 100%;
-    height: 100%;
-    background: #4caf50;
-    color: white;
-    padding: 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.5s ease;
+  margin-left: 120px;
+  padding: 10px;
+  font-size: 16px;
+  border: 4px solid #fff;
+  border-radius: 4px;
+  max-width: 150px;
+  max-height: 50px;
+  width: 100%;
+  height: 100%;
+  background: #4caf50;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.5s ease;
 }
 
 button:hover {
-    background: linear-gradient(90deg, rgba(6,1,102,1) 0%, rgba(98,20,182,1) 35%, rgba(40,200,142,1) 100%);
-    box-shadow: 0 0 8px rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 1, 102, 1) 0%,
+    rgba(98, 20, 182, 1) 35%,
+    rgba(40, 200, 142, 1) 100%
+  );
+  box-shadow: 0 0 8px rgb(255, 255, 255);
 }
 
 form {
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 @media (max-width: 768px) {
   .header {
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
+    max-width: 450px;
+    width: 450px;
+  }
+  nav img {
+    display: none;
   }
   .footer-col {
     width: 50%;
@@ -213,5 +224,14 @@ form {
   .footer-row {
     display: flex;
     flex-direction: column;
+  }
+  main {
+    width: 450px;
+  }
+  .footer {
+    width: 450px;
+  }
+  .contactForm h1 {
+    margin-left: 90px;
   }
 }

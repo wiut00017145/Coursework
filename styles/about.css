@@ -172,6 +172,9 @@ main {
 }
 
 @media (max-width: 768px) {
+  nav img {
+    display: none;
+  }
   .header {
     display: flex;
     flex-direction: column;
@@ -183,5 +186,11 @@ main {
   .footer-row {
     display: flex;
     flex-direction: column;
+  }
+  .container {
+    margin-left: 25px;
+  }
+  main {
+    height: 50vh;
   }
 }
