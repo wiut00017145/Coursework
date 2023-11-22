@@ -1,10 +1,4 @@
-var navLinks = document.getElementById("navLinks");
-function showMenuBar() {
-  navLinks.style.right = "0";
-}
-function hideMenuBar() {
-  navLinks.style.right = "-200px"
-}
+
 
 const initSlider = () => {
   const imgList = document.querySelector(".slider-wrapper .img-list");
