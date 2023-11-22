@@ -336,7 +336,26 @@ ul {
 }
 
 @media (max-width: 700px) {
-
+  .text {
+    max-width: 450px;
+    width: 450px;
+  }
+  .header {
+    width: 450px;
+  }
+  main {
+    width: 450px;
+  }
+  .footer {
+    max-width: 450px;
+    width: 450px;
+  }
+  .footer-col {
+    padding: 0 ;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 10px;
+  }
   .slider-wrapper .slide-button {
     display: none !important;
   }
@@ -352,6 +371,10 @@ ul {
   }
   .slider-scroll .scrollbar-thumb {
     width: 20%;
+  }
+  .slider-scroll {
+    max-width: 450px;
+    width: 100%;
   }
   .title h1 {
     font-size: 40px;
